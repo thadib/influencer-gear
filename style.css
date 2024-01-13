@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+header{
+    margin: 50px 120px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > ul {
+    list-style: none;
+    display: flex;
+}
+nav li{
+    margin-right: 30px;
+}
+nav li a{
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.logo{
+    color: #3A3A3A;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.banner-title{
+    max-width: 80%;
+    color: #3A3A3A;
+    font-size: 3.25rem;
+    font-weight: 700;
+}
+.banner-description{
+    max-width: 65%;
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.banner-btn{
+    color: #FFF;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 41px;
+    border: 0;
+    padding: 6px 20px;
+    background: #E02C6D;
+}
+.banner-img{
+    position: relative;
+}
+.main-camera{
+    position: absolute;
+    top: 8%;
+    right: 6%;
+    width: 90%;
+}
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    nav{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        text-align: center;
+    }
+    .banner-title{
+        max-width: 100%;
+        font-size: 1.75rem;
+    }
+    .banner-description{
+        max-width: 100%;
+    }
+}
